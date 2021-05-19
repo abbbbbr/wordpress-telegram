@@ -182,11 +182,6 @@ class AssetManager extends BaseClass {
 	 */
 	public function get_debug_info() {
 
-		// XTEC ************ AFEGIT - Don't show technical information to users
-		// 2021.05.13 @aginard
-		return false;
-		// ************ FI
-
 		$info  = 'PHP: ' . PHP_VERSION . PHP_EOL;
 		$info .= 'WP: ' . get_bloginfo( 'version' ) . PHP_EOL;
 		$info .= 'WP Telegram: ' . $this->plugin()->version();
